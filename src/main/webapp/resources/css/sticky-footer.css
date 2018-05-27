@@ -26,3 +26,7 @@ body {
 	max-width: 680px;
 	padding: 0 15px;
 }
+
+.wm-navbar {
+	background-color: rgb(64, 186, 255);
+}

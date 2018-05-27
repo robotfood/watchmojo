@@ -6,7 +6,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<h2>Welcome</h2>
+						<h2>
+							<div id="my-video-display"></div>
+						</h2>
 					</div>
 				</div>
 			</div>

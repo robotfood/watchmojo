@@ -1,22 +1,5 @@
 package ca.watch.mojo.web;
 
-import com.mongodb.ServerAddress;
-
-import com.mongodb.client.MongoDatabase;
-import com.mongodb.client.MongoClients;
-import com.mongodb.client.MongoCollection;
-
-import org.bson.Document;
-import java.util.Arrays;
-import com.mongodb.Block;
-import com.mongodb.MongoClient;
-import com.mongodb.client.MongoCursor;
-import static com.mongodb.client.model.Filters.*;
-import com.mongodb.client.result.DeleteResult;
-import static com.mongodb.client.model.Updates.*;
-import com.mongodb.client.result.UpdateResult;
-import java.util.ArrayList;
-import java.util.List;
 import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -32,9 +15,6 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Model model) throws IOException {
 		LOGGER.info("home controller called.");
-		MongoClient mongoClient = MongoClients.create();
-
-		// mongoClient.get
 		return "home";
 	}
 
